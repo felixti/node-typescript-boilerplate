@@ -1,0 +1,25 @@
+{
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        "javacript",
+        {
+            "language": "typescript",
+            "autoFix": true
+        }
+    ],
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "[typescript]": {
+        "editor.formatOnSave": false
+    },
+    "debug.node.autoAttach": "on",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}

@@ -1,0 +1,9 @@
+node_modules
+
+.dockerignore
+
+Dockerfile
+draft.toml
+charts/
+
+*.log

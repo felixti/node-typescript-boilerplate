@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "allowJs": true,
+        "declaration": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "target": "es6",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "baseUrl": "./",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+        "paths": {
+            "@services/*": ["src/services/*"],
+            "@schemas/*": ["src/schemas/*"],
+            "@settings/*": ["src/settings/*"],
+            "@controllers/*": ["src/controllers/*"],
+            "@routes/*": ["src/routes/*"],
+            "@logging/*": ["src/logging/*"],
+            "@database/*": ["src/database/*"]
+        }
+    },
+    "include": ["src", "__tests__"],
+    "exclude": ["node_modules", "prod_node_modules"]
+}
