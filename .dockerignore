@@ -1,6 +1,7 @@
 node_modules
 
 .dockerignore
+.docker
 
 Dockerfile
 draft.toml
