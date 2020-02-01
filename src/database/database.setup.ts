@@ -1,12 +1,14 @@
 import mongoose from 'mongoose'
 import settings from '@settings/azure.settings'
 
-export const database = ({
+export default ({
   configure
 })
 
 async function configure () {
-  await mongoose.connect(settings.cosmosDbConnectionString, {
+  const mongoUrl = settings.cosmosDbConnectionString ?? 'mongodb://localhost:27017'
+
+  await mongoose.connect(mongoUrl, {
     useNewUrlParser: true,
     autoReconnect: true,
     keepAlive: true,

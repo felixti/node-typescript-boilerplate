@@ -1,10 +1,11 @@
+import os from 'os'
 import config from '@settings/azure.settings'
 import { setup, defaultClient } from 'applicationinsights'
 
 export default {
   configure: () => {
     const appInsightsConfig = setup(config.applicationInsightsApiKey)
-    defaultClient.context.tags[defaultClient.context.keys.cloudRole] = config.cloudRoleName
+    defaultClient.context.tags[defaultClient?.context?.keys?.cloudRole] = config.cloudRoleName ?? os.hostname()
     appInsightsConfig.setSendLiveMetrics(true)
     appInsightsConfig.setAutoCollectDependencies(true)
     appInsightsConfig.setAutoCollectExceptions(true)

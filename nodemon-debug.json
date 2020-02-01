@@ -1,5 +1,5 @@
 {
     "watch": ["src"],
     "ext": ".ts,.js",
-    "exec": "node --inspect-brk=0.0.0.0 -r tsconfig-paths/register -r sucrase/register -r sucrase/bin/sucrase-node src/server.ts"
+    "exec": "node --inspect-brk=0.0.0.0 -r tsconfig-paths/register -r ts-node/register"
 }

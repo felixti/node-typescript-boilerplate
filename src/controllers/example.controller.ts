@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import ExampleSchema, { Example } from '@schemas/Example'
+import { ExampleSchema, Example } from '@schemas/example.schema'
 
 export const controller = ({
   readAll,
