@@ -1,5 +1,9 @@
-const { pathsToModuleNameMapper } = require('ts-jest/utils');
-const { compilerOptions } = require('./tsconfig');
+const {
+  pathsToModuleNameMapper
+} = require('ts-jest/utils');
+const {
+  compilerOptions
+} = require('./tsconfig');
 
 module.exports = {
   // All imported modules in your tests should be mocked automatically
@@ -77,7 +81,7 @@ module.exports = {
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
-    prefix: '<rootDir>/src/',
+    prefix: '<rootDir>/',
   }),
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

@@ -55,7 +55,6 @@
         "helmet": "^3.21.2",
         "merge-graphql-schemas": "^1.7.6",
         "mongoose": "^5.8.10",
-        "reflect-metadata": "^0.1.13",
         "type-graphql": "^0.17.6"
     }
 }

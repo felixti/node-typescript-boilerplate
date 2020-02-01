@@ -10,6 +10,7 @@ async function configure () {
 
   await mongoose.connect(mongoUrl, {
     useNewUrlParser: true,
+    useUnifiedTopology: true,
     autoReconnect: true,
     keepAlive: true,
     useFindAndModify: true

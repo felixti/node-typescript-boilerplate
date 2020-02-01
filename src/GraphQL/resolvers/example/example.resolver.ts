@@ -2,7 +2,7 @@ import { Resolver, Query, Arg, Mutation, FieldResolver, Root } from 'type-graphq
 import { ObjectId } from 'mongodb'
 import { Example, ExampleSchema } from '@schemas/example.schema'
 import { ObjectIdScalar } from '@graphql/scalars/object-id.scalar'
-import { ExampleInput } from './types/example.input'
+import { ExampleInput } from '../types/example.input'
 
 @Resolver(of => Example)
 export class ExampleResolver {

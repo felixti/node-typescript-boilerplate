@@ -1,4 +1,4 @@
-import { ExampleResolver } from './example.resolver'
-export * from './example.resolver'
+import { ExampleResolver } from './example/example.resolver'
+export * from './example/example.resolver'
 
 export default [ExampleResolver]

@@ -1,6 +1,5 @@
 {
     "compilerOptions": {
-        "target": "es6",
         "module": "commonjs",
         "lib": ["es6", "es2017", "ESNext.AsyncIterable"],
         "allowJs": true,
@@ -10,16 +9,13 @@
         "experimentalDecorators": true,
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
+        "target": "es6",
         "sourceMap": true,
         "outDir": "./dist",
         "baseUrl": "./",
         "forceConsistentCasingInFileNames": true,
         "noImplicitAny": true,
         "strictNullChecks": true,
-        // "strictFunctionTypes": true,
-        // "noUnusedLocals": true,
-        // "noUnusedParameters": true,
-        // "noImplicitReturns": true,
         "paths": {
             "@services/*": ["src/services/*"],
             "@schemas/*": ["src/schemas/*"],
@@ -28,7 +24,7 @@
             "@routes/*": ["src/routes/*"],
             "@logging/*": ["src/logging/*"],
             "@database/*": ["src/database/*"],
-            "@graphql/*": ["src/GraphQL/*"],
+            "@graphql/*": ["src/GraphQL/*"]
         }
     },
     "include": ["src", "__tests__"],
