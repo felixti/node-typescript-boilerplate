@@ -8,7 +8,7 @@
     },
     "scripts": {
         "build": "rimraf dist && tsc -p tsconfig.build.json",
-        "start": "sucrase-node src/server.ts",
+        "start": "node -r tsconfig-paths/register -r ts-node/register src/server.ts",
         "start:dev": "nodemon src/server.ts",
         "start:debug": "yarn && nodemon src/server.ts --config nodemon-debug.json",
         "start:prod": "npm run build && node dist/server.js",
